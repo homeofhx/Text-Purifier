@@ -8,7 +8,7 @@ class ViewController: NSViewController {
     private let validCharRegex = try! NSRegularExpression(pattern: "[ -~\\t\\n]", options: [])
     
     @IBAction func purify(_ sender: Any) {
-        let inputBoxRawText:String = inputBox.string!
+        let inputBoxRawText:String = inputBox.string
         var inputBoxPurifiedText = ""
         
         let validResult = validCharRegex.matches(in: inputBoxRawText, options: [], range: NSRange(location: 0, length: inputBoxRawText.utf16.count))
