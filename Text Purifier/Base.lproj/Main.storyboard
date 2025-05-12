@@ -324,8 +324,8 @@ Gw
                             </scrollView>
                             <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYA-a4-DOy">
                                 <rect key="frame" x="127" y="11" width="451" height="21"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" bezelStyle="round" id="Bnl-Ii-RcR">
-                                    <font key="font" metaFont="system" size="11"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Enter the Regex for valid characters (groups) here..." bezelStyle="round" id="Bnl-Ii-RcR">
+                                    <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -351,7 +351,7 @@ Gw
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ucv-S2-ul3">
-                                <rect key="frame" x="18" y="13" width="102" height="19"/>
+                                <rect key="frame" x="18" y="11" width="102" height="21"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Custom Rule:" id="Bc9-vi-Jm6">
                                     <font key="font" metaFont="systemBold" size="15"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -369,7 +369,7 @@ Gw
                             <constraint firstItem="gts-fk-Vyr" firstAttribute="bottom" secondItem="hU1-2h-82h" secondAttribute="bottom" id="B6w-sg-yLz"/>
                             <constraint firstAttribute="bottom" secondItem="gts-fk-Vyr" secondAttribute="bottom" constant="11" id="Dc9-s9-5lc"/>
                             <constraint firstItem="Azv-7T-kgx" firstAttribute="trailing" secondItem="hU1-2h-82h" secondAttribute="trailing" id="DsB-MT-Faf"/>
-                            <constraint firstItem="mYA-a4-DOy" firstAttribute="baseline" secondItem="hU1-2h-82h" secondAttribute="firstBaseline" id="EEN-dy-7cM"/>
+                            <constraint firstItem="mYA-a4-DOy" firstAttribute="baseline" relation="greaterThanOrEqual" secondItem="hU1-2h-82h" secondAttribute="firstBaseline" id="EEN-dy-7cM"/>
                             <constraint firstItem="wFb-fU-Hos" firstAttribute="leading" secondItem="Ucv-S2-ul3" secondAttribute="leading" id="EuZ-RN-CfM"/>
                             <constraint firstItem="Azv-7T-kgx" firstAttribute="leading" secondItem="VQ2-PQ-MXc" secondAttribute="trailing" constant="7" id="Fda-ni-bIo"/>
                             <constraint firstItem="gts-fk-Vyr" firstAttribute="top" secondItem="hU1-2h-82h" secondAttribute="top" id="HIq-uQ-kTg"/>
@@ -379,7 +379,7 @@ Gw
                             <constraint firstItem="QhU-C9-I5u" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="MNo-62-Iax"/>
                             <constraint firstItem="wFb-fU-Hos" firstAttribute="top" secondItem="GiC-F7-kVf" secondAttribute="bottom" constant="8" symbolic="YES" id="O2F-ks-VyL"/>
                             <constraint firstItem="hU1-2h-82h" firstAttribute="top" secondItem="Azv-7T-kgx" secondAttribute="bottom" constant="10" id="Obv-og-3tg"/>
-                            <constraint firstItem="Ucv-S2-ul3" firstAttribute="baseline" secondItem="gts-fk-Vyr" secondAttribute="firstBaseline" id="QKt-PJ-cg3"/>
+                            <constraint firstItem="Ucv-S2-ul3" firstAttribute="baseline" relation="greaterThanOrEqual" secondItem="gts-fk-Vyr" secondAttribute="firstBaseline" id="QKt-PJ-cg3"/>
                             <constraint firstAttribute="trailing" secondItem="kRZ-ux-3WT" secondAttribute="trailing" constant="20" symbolic="YES" id="Syz-rZ-1kh"/>
                             <constraint firstItem="QhU-C9-I5u" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="5.5" id="Ynf-TT-Csf"/>
                             <constraint firstItem="GiC-F7-kVf" firstAttribute="leading" secondItem="wFb-fU-Hos" secondAttribute="leading" id="ZvP-GR-qR8"/>

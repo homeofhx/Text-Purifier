@@ -10,6 +10,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var resetRuleButton: NSButton!
     
     private var validCharRegex : NSRegularExpression!
+    private let defaultRule = "[ -~\\t\\n]"
     
     @IBAction func purify(_ sender: Any) {
         let inputBoxRawText:String = inputBox.string
@@ -27,35 +28,25 @@ class ViewController: NSViewController {
         displayBox.documentView!.insertText("------ PURIFIED TEXT ------\n\n")
         displayBox.documentView!.insertText(inputBoxPurifiedText + "\n\n")
         displayBox.documentView!.insertText("------ END OF PURIFIED TEXT ------\n\n\n\n\n")
-        print("using rule: " + validCharRegex.description)
     }
     
     @IBAction func applyRule(_ sender: Any) {
-        print("applied btn clicked")
         let rulesBoxRawString:String = rulesBox.stringValue
-        print("entered rule: " + rulesBoxRawString)
         validCharRegex = try! NSRegularExpression(pattern: rulesBoxRawString, options: [])
-        print("current rule: " + validCharRegex.description)
     }
     
     @IBAction func resetRule(_ sender: Any) {
-        print("reseted btn clicked")
-        validCharRegex = try! NSRegularExpression(pattern: "[ -~\\t\\n]", options: [])
-        print("current rule: " + validCharRegex.description)
+        validCharRegex = try! NSRegularExpression(pattern: defaultRule, options: [])
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        validCharRegex = try! NSRegularExpression(pattern: "[ -~\\t\\n]", options: [])
-        
-        print("")
-        print("")
-        print("INIT COMPLETE")
-        print("rule: " + validCharRegex.description)
+        validCharRegex = try! NSRegularExpression(pattern: defaultRule, options: [])
     }
     
     override var representedObject: Any? {
         didSet {
         }
     }
+    
 }
