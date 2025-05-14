@@ -402,14 +402,12 @@ Gw
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Button" destination="QhU-C9-I5u" id="mtS-hk-ida"/>
-                        <outlet property="applyRuleButton" destination="gts-fk-Vyr" id="GkZ-u1-yBL"/>
-                        <outlet property="button" destination="QhU-C9-I5u" id="m1o-RT-Dfq"/>
-                        <outlet property="displayBox" destination="Azv-7T-kgx" id="1Gz-Od-Ye9"/>
-                        <outlet property="inputBox" destination="jDR-0T-BdD" id="zld-Qz-K2M"/>
-                        <outlet property="purifyButton" destination="QhU-C9-I5u" id="PJA-wQ-3da"/>
-                        <outlet property="resetRuleButton" destination="hU1-2h-82h" id="qRW-6O-PDV"/>
-                        <outlet property="rulesBox" destination="mYA-a4-DOy" id="1bI-dg-nrh"/>
+                        <outlet property="applyRuleButton" destination="gts-fk-Vyr" id="uMy-th-eM4"/>
+                        <outlet property="inputBox" destination="wFb-fU-Hos" id="PXg-Uo-B0y"/>
+                        <outlet property="outputBox" destination="Azv-7T-kgx" id="ymV-gU-fif"/>
+                        <outlet property="purifyButton" destination="QhU-C9-I5u" id="W86-lt-ax4"/>
+                        <outlet property="resetRuleButton" destination="hU1-2h-82h" id="yrI-53-mXr"/>
+                        <outlet property="rulesBox" destination="mYA-a4-DOy" id="tOq-cu-v08"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

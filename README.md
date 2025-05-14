@@ -1,4 +1,4 @@
-# Text Purifier
+![Text Purifier](TPPromo.png)
 
 A super simple Mac application that filters out specific characters in given text using regular expression (Regex).
 
