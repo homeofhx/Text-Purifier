@@ -236,7 +236,7 @@ Gw
                         <rect key="frame" x="0.0" y="0.0" width="800" height="470"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-C9-I5u">
+                            <button toolTip="Purify the text using default/custom rule" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-C9-I5u">
                                 <rect key="frame" x="378" y="212" width="45" height="32"/>
                                 <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoRightTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dVp-hm-o02">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -270,7 +270,7 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFb-fU-Hos">
+                            <scrollView toolTip="Paste or type text here" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFb-fU-Hos">
                                 <rect key="frame" x="20" y="42" width="353" height="382"/>
                                 <clipView key="contentView" drawsBackground="NO" id="82Q-fh-0XY">
                                     <rect key="frame" x="1" y="1" width="351" height="380"/>
@@ -296,7 +296,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azv-7T-kgx">
+                            <scrollView toolTip="Get the purified result here!" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azv-7T-kgx">
                                 <rect key="frame" x="427" y="42" width="353" height="382"/>
                                 <clipView key="contentView" drawsBackground="NO" id="6g9-MJ-s1H">
                                     <rect key="frame" x="1" y="1" width="351" height="380"/>
@@ -322,7 +322,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYA-a4-DOy">
+                            <textField toolTip="Enter the custom filter rule here, using Regex" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYA-a4-DOy">
                                 <rect key="frame" x="127" y="11" width="451" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Enter the Regex for valid characters (groups) here..." bezelStyle="round" id="Bnl-Ii-RcR">
                                     <font key="font" metaFont="smallSystem"/>
@@ -330,7 +330,7 @@ Gw
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gts-fk-Vyr">
+                            <button toolTip="Apply custom rule" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gts-fk-Vyr">
                                 <rect key="frame" x="586" y="4" width="75" height="32"/>
                                 <buttonCell key="cell" type="push" title="Apply" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="76X-Wu-pYU">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -340,7 +340,7 @@ Gw
                                     <action selector="applyRule:" target="XfG-lQ-9wD" id="EKo-4C-2JB"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hU1-2h-82h">
+                            <button toolTip="Reset the filter rule to the default (filters out non-ASCII characters)" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hU1-2h-82h">
                                 <rect key="frame" x="661" y="4" width="125" height="32"/>
                                 <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xs3-gK-kFS">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
