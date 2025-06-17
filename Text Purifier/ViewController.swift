@@ -12,6 +12,7 @@ class ViewController: NSViewController {
     private var validCharRegex : NSRegularExpression!
     private let defaultRule = "[ -~\\t\\n]"
     private let noRuleAlert = NSAlert()
+    private let invalidRuleAlert = NSAlert()
     
     @IBAction func purify(_ sender: Any) {
         let inputFakeTextView = inputBox.documentView as! NSTextView     // A change made in version 2. Similar approach as inputBoxFakeNSString in this function.
@@ -38,26 +39,38 @@ class ViewController: NSViewController {
         if rulesBoxRawString.count == 0 {
             noRuleAlert.runModal()
         } else {
-            validCharRegex = try! NSRegularExpression(pattern: rulesBoxRawString, options: [])
-            outputBox.documentView!.insertText("CUSTOM PURIFY RULE APPLIED!\n\n")
+            do {
+                validCharRegex = try NSRegularExpression(pattern: rulesBoxRawString, options: [])
+                outputBox.documentView!.insertText("> Custom purify rule \"" + rulesBoxRawString + "\" applied! <\n\n")
+            } catch {
+                invalidRuleAlert.runModal()
+            }
         }
     }
     
     @IBAction func resetRule(_ sender: Any) {
         validCharRegex = try! NSRegularExpression(pattern: defaultRule, options: [])
-        outputBox.documentView!.insertText("PURIFY RULE RESET TO DEFAULT! (filters out non-ASCII characters)\n\n")
+        outputBox.documentView!.insertText("> Purify rule reset to default! (filters out non-ASCII characters) <\n\n")
     }
     
     private func setupNoRuleAlert() {
         noRuleAlert.messageText = "No Purify Rule!"
         noRuleAlert.informativeText = "No purify rule in the Custom Rule box. Please add purify rule using regular expression (Regex) in the Custom Rule box before clicking Apply."
-        noRuleAlert.addButton(withTitle: "OK")
+        noRuleAlert.addButton(withTitle: "I Know")
         noRuleAlert.alertStyle = .warning
+    }
+    
+    private func setupInvalidRuleAlert() {
+        invalidRuleAlert.messageText = "Can't Process Custom Rule!"
+        invalidRuleAlert.informativeText = "Your custom rule might need to be modified to comply with Apple's NSRegularExpression."
+        invalidRuleAlert.addButton(withTitle: "I Know")
+        invalidRuleAlert.alertStyle = .warning
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNoRuleAlert()
+        setupInvalidRuleAlert()
         validCharRegex = try! NSRegularExpression(pattern: defaultRule, options: [])
     }
     
