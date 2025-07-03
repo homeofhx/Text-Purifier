@@ -13,6 +13,7 @@ class ViewController: NSViewController {
     private let defaultRule = "[ -~\\t\\n]"
     private let noRuleAlert = NSAlert()
     private let invalidRuleAlert = NSAlert()
+    private let defaultFont = NSFont(name: "Helvetica Neue", size: 17.0)
     
     @IBAction func purify(_ sender: Any) {
         let inputFakeTextView = inputBox.documentView as! NSTextView     // A change made in version 2. Similar approach as inputBoxFakeNSString in this function.
@@ -69,6 +70,12 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let inputFakeTextView = inputBox.documentView as! NSTextView
+        inputFakeTextView.font = defaultFont
+        let outputFakeTextView = outputBox.documentView as! NSTextView
+        outputFakeTextView.font = defaultFont
+        
         setupNoRuleAlert()
         setupInvalidRuleAlert()
         validCharRegex = try! NSRegularExpression(pattern: defaultRule, options: [])
