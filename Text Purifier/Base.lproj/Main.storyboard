@@ -24,11 +24,15 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Get latest release on GitHub" id="s3R-GW-D0q">
+                                            <connections>
+                                                <action selector="getLatestRelease:" target="Ady-hI-5gd" id="JGo-vE-T3i"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Quit!" id="4sb-4s-VLi">
                                             <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
-                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>

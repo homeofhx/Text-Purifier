@@ -2,7 +2,7 @@
 
 A super simple Mac application that filters out specific characters in given text using regular expression (Regex).
 
-**Mac OS compatibility**: 10.10 (OS X Yosemite) or newer. ARM Macs need to install Rosetta 2 (Mac OS will prompt to install if not) before use.
+**Mac OS compatibility**: 10.10 (OS X Yosemite) or newer.
 
 ## How to Use
 

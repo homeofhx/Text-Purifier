@@ -11,7 +11,7 @@
 		CE60978F2D9F816300BF6443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60978E2D9F816300BF6443 /* ViewController.swift */; };
 		CE6097912D9F816400BF6443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6097902D9F816400BF6443 /* Assets.xcassets */; };
 		CE6097942D9F816400BF6443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6097922D9F816400BF6443 /* Main.storyboard */; };
-		CE60979D2D9F81EA00BF6443 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = CE60979C2D9F81EA00BF6443 /* Credits.html */; };
+		CEAC98D12E231A1B004D92C6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CEAC98D02E231A1B004D92C6 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		CE6097932D9F816400BF6443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE6097952D9F816400BF6443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6097962D9F816400BF6443 /* Text_Purifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Text_Purifier.entitlements; sourceTree = "<group>"; };
-		CE60979C2D9F81EA00BF6443 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		CEAC98D02E231A1B004D92C6 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				CE6097922D9F816400BF6443 /* Main.storyboard */,
 				CE6097952D9F816400BF6443 /* Info.plist */,
 				CE6097962D9F816400BF6443 /* Text_Purifier.entitlements */,
-				CE60979C2D9F81EA00BF6443 /* Credits.html */,
+				CEAC98D02E231A1B004D92C6 /* Credits.rtf */,
 			);
 			path = "Text Purifier";
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6097912D9F816400BF6443 /* Assets.xcassets in Resources */,
-				CE60979D2D9F81EA00BF6443 /* Credits.html in Resources */,
+				CEAC98D12E231A1B004D92C6 /* Credits.rtf in Resources */,
 				CE6097942D9F816400BF6443 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

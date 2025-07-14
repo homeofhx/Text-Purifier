@@ -15,6 +15,11 @@ class ViewController: NSViewController {
     private let invalidRuleAlert = NSAlert()
     private let defaultFont = NSFont(name: "Helvetica Neue", size: 17.0)
     
+    @IBAction func getLatestRelease(_ sender: AnyObject) {
+        let url = URL(string: "https://github.com/homeofhx/Text-Purifier/releases/latest")
+        NSWorkspace.shared.open(url!)
+    }
+    
     @IBAction func purify(_ sender: Any) {
         let inputFakeTextView = inputBox.documentView as! NSTextView     // A change made in version 2. Similar approach as inputBoxFakeNSString in this function.
         let inputBoxRawText = inputFakeTextView.string
